@@ -12,8 +12,13 @@ class ViewController: UIViewController {
   
     @IBOutlet weak var imageViewDice1: UIImageView!
     override func viewDidLoad() {
-        imageViewDice1.image=#imageLiteral(resourceName: "dicethree")
-    
     }
+    
+    @IBAction func actionRoll(_ sender: UIButton) {
+        
+        imageViewDice1.image = #imageLiteral(resourceName: "diceone")
+    }
+    
 }
 
+   
