@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBAction func actionRoll(_ sender: UIButton) {
         
+        
         imageViewDice1.image = #imageLiteral(resourceName: "diceone")
     }
     
