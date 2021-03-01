@@ -11,15 +11,15 @@ import UIKit
 class ViewController: UIViewController {
   
     @IBOutlet weak var imageViewDice1: UIImageView!
-    override func viewDidLoad() {
-    }
+    @IBOutlet weak var imageViewDice2: UIImageView!
+    
+    var disrArray = [#imageLiteral(resourceName: "diceone"),#imageLiteral(resourceName: "dicetwo"),#imageLiteral(resourceName: "dicethree"),#imageLiteral(resourceName: "dicefour"),#imageLiteral(resourceName: "dicefive"),#imageLiteral(resourceName: "dicesix")]
     
     @IBAction func actionRoll(_ sender: UIButton) {
         
-        
-        imageViewDice1.image = #imageLiteral(resourceName: "diceone")
+        imageViewDice1.image = disrArray[Int.random(in:0...5)]
+        imageViewDice2.image = disrArray[Int.random(in:0...5)]
+        }
     }
-    
-}
 
    
